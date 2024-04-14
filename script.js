@@ -32,3 +32,5 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   changeSlide(false);
   restart();
 });
+
+AOS.init(); //animações

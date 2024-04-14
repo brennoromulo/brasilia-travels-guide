@@ -3,25 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
     <title>Pontos turísticos de Brasília</title>
   </head>
   <body>
     <header>
-        <h1>Pontos turísticos de brasília</h1>
-        <p>"Explore a capital do Brasil em toda a sua beleza! Bem-vindo ao nosso site, onde você pode embarcar em uma viagem virtual pelos pontos turísticos mais icônicos de Brasília. Deixe-se encantar pela arquitetura modernista, pelos espaços verdes deslumbrantes e pela rica história cultural desta cidade única. Navegue através do nosso carrossel de fotos e descubra o charme da capital brasileira, tudo isso sem sair do conforto da sua casa. Prepare-se para se apaixonar por Brasília, uma cidade que mistura história, cultura e beleza de maneira incomparável."</p>
+      <img data-aos="fade-left"  data-aos-duration="3000" src="./assets/headerimage.webp" class="logo" alt="logo" />
+      <div data-aos="fade-up"  data-aos-duration="3000">
+        <h1>Pontos turísticos de <span>Brasília</span></h1>
+        <p>
+          Explore a capital do Brasil em toda a sua beleza! Bem-vindo ao nosso site, onde você pode embarcar em uma viagem virtual pelos pontos
+          turísticos mais icônicos de Brasília. Deixe-se encantar pela arquitetura modernista, pelos espaços verdes deslumbrantes e pela rica história
+          cultural desta cidade única. Navegue através do nosso carrossel de fotos e descubra o charme da capital brasileira, tudo isso sem sair do
+          conforto da sua casa. Prepare-se para se apaixonar por Brasília, uma cidade que mistura história, cultura e beleza de maneira incomparável.
+        </p>
+      </div>
     </header>
-    <div class="carousel">
-      <div class="slides">
-        <img src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide" />
-        <img src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide" />
-        <img src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide" />
+    <main>
+      <div class="carousel" data-aos="fade-left"  data-aos-duration="2000">
+        <div class="slides">
+          <div class="slide">
+            <img src="./assets/catedral.jpeg" alt="slide image" />
+            <p class="label">
+              A Catedral de Brasília, projetada por Oscar Niemeyer e inaugurada em 1970, é um ícone da arquitetura moderna brasileira. Sua estrutura
+              hiperboloide, composta por 16 colunas de concreto que convergem para o céu, simboliza os braços erguidos em oração. Seu interior
+              minimalista e iluminado por vitrais coloridos proporciona uma experiência espiritual única para os visitantes.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="./assets/itamaraty.jpeg" alt="slide image" />
+            <p class="label">
+              O Palácio do Itamaraty, também conhecido como Palácio dos Arcos, é uma obra-prima da arquitetura moderna brasileira, projetada por Oscar
+              Niemeyer e inaugurada em 1970. Localizado em Brasília, serve como sede do Ministério das Relações Exteriores do Brasil. Sua arquitetura
+              impressionante, caracterizada por colunas elegantes, curvas suaves e uma fachada revestida por azulejos brancos, reflete a visão
+              futurista e inovadora do arquiteto. O interior do palácio é igualmente notável, com obras de arte de renomados artistas brasileiros
+              adornando seus espaços, proporcionando um ambiente único para a diplomacia e as relações internacionais.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="./assets/congresso.jpg" alt="slide image" />
+            <p class="label">
+              O Congresso Nacional do Brasil é o órgão legislativo bicameral do país, composto pela Câmara dos Deputados e pelo Senado Federal.
+              Localizado em Brasília, o edifício do Congresso é um marco arquitetônico projetado por Oscar Niemeyer e inaugurado em 1960. Sua
+              estrutura imponente é caracterizada por duas cúpulas semelhantes, representando as duas casas legislativas. O Congresso é responsável
+              pela elaboração e aprovação de leis, além de exercer funções de fiscalização e controle sobre o Poder Executivo. É um símbolo da
+              democracia brasileira e palco de debates fundamentais para o desenvolvimento do país.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="./assets/pontejk.jpg" alt="slide image" />
+            <p class="label">
+              A Ponte Juscelino Kubitschek, conhecida como Ponte JK, é uma das principais pontes de Brasília, inaugurada em 2002. Seu design arrojado
+              e elegante foi concebido pelo arquiteto Alexandre Chan, inspirado na genialidade de Oscar Niemeyer. A ponte atravessa o Lago Paranoá,
+              conectando o Plano Piloto à região administrativa de Lago Sul. Com três arcos assimétricos que se entrelaçam, a Ponte JK é uma obra de
+              engenharia impressionante e uma atração turística popular. Além de sua funcionalidade como via de transporte, é apreciada por sua beleza
+              arquitetônica e seu impacto visual na paisagem de Brasília.
+            </p>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="control prev-slide">&#9668;</div>
+          <div class="control next-slide">&#9658;</div>
+        </div>
       </div>
-      <div class="controls">
-        <div class="control prev-slide">&#9668;</div>
-        <div class="control next-slide">&#9658;</div>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <p>Desenvolvido por Brenno Rômulo F. Costa</p>
+      <p>Matrícula: 236101080</p>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
